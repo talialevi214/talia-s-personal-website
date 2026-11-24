@@ -1,0 +1,159 @@
+body {
+  margin: 0;
+  text-align: center;
+  background-color: #FDFFFC;
+  color: #020100;
+  font-family: "DM Sans", sans-serif;
+}
+
+.top-container {
+  background-color: #235789;
+  padding: 80px 20px;
+}
+.profile-image {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #F1D302;
+}
+.LAYA-image {
+  width: 100%;
+  max-width: 200px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.top-container h1 {
+  color: #FDFFFC;
+}
+.touch-image{
+ width: 100%;
+  max-width: 200px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.top-container h2 {
+  color: #F1D302;
+  font-weight: normal;
+}
+.middle-container {
+  background-color: #FDFFFC;
+  color: #020100;
+  padding: 70px 20px;
+}
+
+.profile h2,
+.contact-me h2 {
+  color: #235789;
+}
+
+.skills {
+  background-color: #235789;
+  color: #FDFFFC;
+  padding: 40px 20px;
+  border-radius: 12px;
+}
+
+.skills h2 {
+  color: #F1D302;
+}
+
+.skill-item {
+  background-color: #FDFFFC;
+  color: #020100;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.skill-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(2, 1, 0, 0.18);
+}
+
+.profile-image,
+.LAYA-image,
+.touch-image {
+  transition: transform 0.3s ease;
+}
+
+.profile-image:hover,
+.LAYA-image:hover,
+.touch-image:hover {
+  transform: scale(1.04);
+}
+
+.skill-item h3 {
+  color: #ED1C24;
+}
+
+hr {
+  border: none;
+  border-top: 4px solid #F1D302;
+  width: 60px;
+  margin: 60px auto;
+}
+.btn {
+  display: inline-block;
+  background-color: #ED1C24;
+  color: #FDFFFC;
+  padding: 10px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  margin: 40px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.btn:hover {
+  background-color: #235789;
+  transform: translateY(-3px);
+}
+
+.bottom-container {
+  background-color: #020100;
+  padding: 30px 20px;
+}
+
+.footer-link {
+  color: #FDFFFC;
+  text-decoration: none;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+@media (max-width: 600px) {
+  .parent {
+    grid-template-columns: 1fr;
+  }
+
+  .top-container h1 {
+    font-size: 3rem;
+  }
+
+  .middle-container {
+    padding: 45px 16px;
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.title-text {
+  animation: fadeInUp 1s ease-out;
+}
